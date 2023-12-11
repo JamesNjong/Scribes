@@ -5,48 +5,72 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="./styles/design.css">
   
   <title>Frontend Mentor | Newsletter sign-up form with success message</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
 
-  <!-- Sign-up form start -->
 
-  Stay updated!
+  <div class="bucket">
+    <div class="content-container">
+      <div class="left-content-container">
+        <div class="sf_content-left-top flex flex-col p-4 gap-6">
+          <h1 class="header-text text-3xl font-bold ">Stay updated!</h1>
+          <p class="headline-text">Join 60,000+ product managers receiving monthly updates on:</p>
+          <ul class="headline-list">
 
-  Join 60,000+ product managers receiving monthly updates on:
+            <li class="headline-list_item flex flex-row justify-start items-start"> <img src="./assets/images/icon-list.svg" class="p-1" height="24" width="24" alt=""> <span class="">Product discovery and building what matters</span> </li>
+            <li class="headline-list_item flex flex-row justify-start items-start"> <img src="./assets/images/icon-list.svg" class="p-1" height="24" width="24" alt=""> <span class="">Measuring to ensure updates are a success</span> </li>
+            <li class="headline-list_item flex flex-row justify-start items-start"> <img src="./assets/images/icon-list.svg" class="p-1" height="24" width="24" alt=""> <span class="">And much more!</span> </li>
+          
+          </ul> 
+          <div class="form">
+            <form action="" class="flex flex-col justify-start items-start gap-4">
+              <label for="email" class="font-bold">Email address</label>
+              <input type="email" name="email" id="input-email" placeholder="sample@email.com">
+              
+              <button class="buttonPrimary px-6 py-3 rounded-lg">Subscribe to monthly newsletter</button>  
+            </form>
+          </div> 
+        </div>
+      </div>
+      <div class="right-content-container">
+        <div class="img-container">
+          <img src="./assets/images/illustration-sign-up-desktop.svg" alt="" class=""/>
+        </div>
+      </div>
+    </div>
 
-  Product discovery and building what matters
-  Measuring to ensure updates are a success
-  And much more!
+    <div class="feedback-container p-11">
+      <div class="thanks-card flex flex-col justify-start items-start gap-6">
+        <img src="./assets/images/icon-list.svg" height="100" width="100" alt="">
+        <h2 class="font-bold text-2xl">Thanks for subscribing!</h2>
+        <p class="">  A confirmation email has been sent to ash@loremcompany.com. 
+          Please open it and click the button inside to confirm your subscription.
+        </p>
+        <button class="btn">Dismiss message</button>
+      </div>
+    </div>
+  </div>
 
-  Email address
-  email@company.com
 
-  Subscribe to monthly newsletter
 
-  <!-- Sign-up form end -->
 
-  <!-- Success message start -->
 
-  Thanks for subscribing!
 
-  A confirmation email has been sent to ash@loremcompany.com. 
-  Please open it and click the button inside to confirm your subscription.
 
-  Dismiss message
 
-  <!-- Success message end -->
+
+ 
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </div>
+
+
 </body>
 </html>

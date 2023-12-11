@@ -1,0 +1,119 @@
+.buttonPrimary {
+  background-color: hsl(4, 100%, 67%);
+  min-width: 100%;
+}
+
+form, input {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(187, 201, 201);
+}
+
+.bucket {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 80vw;
+}
+
+.content-container {
+  min-height: 80vh;
+  height: 80vh;
+  max-height: 80vh;
+  min-width: 50vw;
+  max-width: 63vw;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 3rem auto;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 1rem;
+  gap: 3%;
+  padding: 1rem 1rem 1rem 1rem;
+}
+.content-container .column-container, .content-container .right-content-container, .content-container .left-content-container {
+  min-width: 47%;
+  max-width: 47%;
+  width: 45%;
+  min-height: 96% !important;
+  max-height: 96% !important;
+  padding: 5px auto;
+  overflow: hidden;
+}
+.content-container .left-content-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.content-container .left-content-container .form #input-email {
+  border: 1px solid black;
+  border-radius: 6px;
+  padding: 5px;
+  min-width: 100%;
+}
+.content-container .right-content-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.content-container .right-content-container .img-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  padding-right: 2rem;
+  padding-left: 2rem;
+  margin-left: 2rem;
+}
+.content-container .right-content-container img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.kontainer-1 {
+  border-radius: 1rem;
+  padding: 2rem 2rem;
+  max-height: 80vh !important;
+  width: -moz-fit-content;
+  width: fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  background-color: white;
+  overflow: hidden;
+}
+.kontainer-1 .sf_content-right {
+  max-height: 100% !important;
+  min-width: 50%;
+  width: 50%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-end;
+  background-color: aqua;
+}
+.kontainer-1 .sf_content-right img {
+  max-height: 90%;
+  height: 90%;
+  width: 90%;
+  max-width: 90%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: center;
+     object-position: center;
+}/*# sourceMappingURL=design.css.map */

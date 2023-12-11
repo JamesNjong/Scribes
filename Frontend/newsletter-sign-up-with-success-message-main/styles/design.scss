@@ -1,0 +1,146 @@
+$primary-color :   hsl(4, 100%, 67%) ;
+
+
+
+
+.buttonPrimary{
+    background-color: $primary-color;
+    min-width: 100%;
+}
+
+form, input{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(187, 201, 201);
+}
+
+.bucket{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 80vw;  
+}
+
+
+@mixin flex-col ($just:center, $align:center) {     
+    display: flex;
+    flex-direction: column;
+    justify-content: $just;
+    align-items: $align;
+}
+
+
+.content-container{
+    min-height: 80vh;
+    height: 80vh;
+    max-height: 80vh;
+    min-width: 50vw;
+    max-width: 63vw;
+    width: fit-content;
+    margin: 3rem auto;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 1rem;
+    gap: 3%;
+    padding: 1rem 1rem 1rem 1rem;
+
+    .column-container{
+        min-width: 47%;
+        max-width: 47%;
+        width: 45%; 
+        min-height: 96% !important; 
+        max-height: 96% !important; 
+        padding: 5px auto; 
+        overflow: hidden; 
+    }
+
+    .left-content-container{
+        @extend .column-container;
+        @include flex-col( ); 
+
+        .form{
+            #input-email{
+                border: 1px solid black;
+                border-radius: 6px;
+                padding: 5px;
+                min-width: 100%;
+            }
+        }
+    }
+
+    .right-content-container{
+        @extend .column-container;  
+        @include flex-col( ); 
+
+        .img-container{ 
+            @include flex-col(center, flex-end );
+            padding-right: 2rem; padding-left: 2rem;
+            margin-left: 2rem; 
+        }
+
+        img{ 
+            object-fit: contain;
+            object-position: center;
+        }
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.kontainer-1{
+    border-radius: 1rem;
+    padding: 2rem 2rem;
+    max-height: 80vh !important;
+    width: fit-content;
+    max-width: fit-content;
+    background-color: white;
+    overflow: hidden;
+
+    .sf_content-right{
+        max-height: 100% !important;  
+        min-width: 50%;
+        width: 50%;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around ;
+        align-items: flex-end; 
+        background-color: aqua;
+
+        img{ 
+            max-height: 90%;
+            height: 90%; 
+            width: 90%;
+            max-width: 90%; 
+            object-fit: contain;
+            object-position: center;
+        }
+    }
+}
+
+
+ 
